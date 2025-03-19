@@ -1,0 +1,25 @@
+app_conf:
+  stopfile: "/tmp/stopmiaodong"
+  log_info:
+    log_name: "xxx"
+    log_path: "./logs/push.log"
+    log_level: "debug"
+    log_max_size: 50
+    log_max_backup: 0
+    log_max_age: 0
+  redis_info:
+    host: "127.0.0.1"
+    port: 6379
+    db: 0
+    password: "xxxx"
+    que_prefix: "queue"
+    que_name: "pushvideo:baike"
+    giveup_que_name: "pushvideo:giveup"
+  mysql_info:
+    host: 127.0.0.1
+    user: root
+    pass: xxxx
+    port: 3306
+    db: newbaike
+    timezone: Asia/Shanghai
+    show_sql: true
